@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.para23_2.HelloApplication">
+    <children>
+        <TabPane prefHeight="600.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="look" text="Просмотр">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane prefHeight="571.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+                                    <tabs>
+                                        <Tab text="Игроки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_gamer" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_gamer_button" mnemonicParsing="false" onAction="#look_for_gamers" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Игры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_game" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_game_button" mnemonicParsing="false" onAction="#look_for_games" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Достижения">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_achiv" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_achiv_button" mnemonicParsing="false" onAction="#look_for_achiv" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Уровни">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_level" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_level_button" mnemonicParsing="false" onAction="#look_for_levels" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Разработчики">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_dev" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_dev_button" mnemonicParsing="false" onAction="#look_for_devs" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Отзывы">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_review" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_review_button" mnemonicParsing="false" onAction="#look_for_reviews" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Покупки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_purchase" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_purchase_button" mnemonicParsing="false" onAction="#look_for_purchases" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Подписки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_sub" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_sud_button" mnemonicParsing="false" onAction="#look_for_subs" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Моды">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_mod" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_mod_button" mnemonicParsing="false" onAction="#look_for_mods" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Турниры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextArea fx:id="look_tour" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                                                                <Button fx:id="looking_tournament_button" mnemonicParsing="false" onAction="#look_for_tournaments" text="Просмотреть" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="add" text="Добавление">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane prefHeight="571.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+                                    <tabs>
+                                        <Tab text="Игроки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_gamer_nick" promptText="Игровой ник" />
+                                                                <TextField fx:id="add_gamer_year" promptText="Сколько полных лет на платформе" />
+                                                                <ComboBox fx:id="add_gamer_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_gamer_initialize" mnemonicParsing="false" onAction="#initialize_gamer" text="Инициализировать" />
+                                                                <Button fx:id="add_gamer" mnemonicParsing="false" onAction="#plus_gamer" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Игры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_game_name" promptText="Название игры" />
+                                                                <TextField fx:id="add_game_year" promptText="Какого года игра" />
+                                                                <ComboBox fx:id="add_game_dev" prefWidth="150.0" />
+                                                                <Button fx:id="add_game_initialize" mnemonicParsing="false" onAction="#initialize_game" text="Инициализировать" />
+                                                                <Button fx:id="add_game" mnemonicParsing="false" onAction="#plus_game" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Достижения">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_achiv_name" promptText="Название достижения" />
+                                                                <ComboBox fx:id="add_achiv_game" prefWidth="150.0" />
+                                                                <ComboBox fx:id="add_achiv_gamer" prefWidth="150.0" />
+                                                                <Button fx:id="add_achiv_initialize" mnemonicParsing="false" onAction="#initialize_achiv" text="Инициализировать" />
+                                                                <Button fx:id="add_achiv" mnemonicParsing="false" onAction="#plus_achiv" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Уровни">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_level_name" promptText="Название уровня" />
+                                                                <ComboBox fx:id="add_level_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_level_initialize" mnemonicParsing="false" onAction="#initialize_level" text="Инициализировать" />
+                                                                <Button fx:id="add_level" mnemonicParsing="false" onAction="#plus_level" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Разработчики">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_dev_name" promptText="Название разработчиков" />
+                                                                <TextField fx:id="add_dev_year" promptText="Год основания" />
+                                                                <Button fx:id="add_dev" mnemonicParsing="false" onAction="#plus_dev" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Отзывы">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_review_text" promptText="Текст отзыва" />
+                                                                <ComboBox fx:id="add_review_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_review_initialize" mnemonicParsing="false" onAction="#initialize_review" text="Инициализировать" />
+                                                                <Button fx:id="add_review" mnemonicParsing="false" onAction="#plus_review" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Покупки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_purchase_code" promptText="Код" />
+                                                                <ComboBox fx:id="add_purchase_gamer" prefWidth="150.0" />
+                                                                <ComboBox fx:id="add_purchase_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_purchase_initialize" mnemonicParsing="false" onAction="#initialize_purchase" text="Инициализировать" />
+                                                                <Button fx:id="add_purchase" mnemonicParsing="false" onAction="#plus_purchase" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Подписки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_sub_code" promptText="Код" />
+                                                                <ComboBox fx:id="add_sub_gamer" prefWidth="150.0" />
+                                                                <ComboBox fx:id="add_sub_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_sub_initialize" mnemonicParsing="false" onAction="#initialize_sub" text="Инициализаровать" />
+                                                                <Button fx:id="add_sub" mnemonicParsing="false" onAction="#plus_sub" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Моды">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_mod_name" promptText="Название мода" />
+                                                                <ComboBox fx:id="add_mod_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_mod_initialize" mnemonicParsing="false" onAction="#initialize_mod" text="Инициализировать" />
+                                                                <Button fx:id="add_mod" mnemonicParsing="false" onAction="#plus_mod" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Турниры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                                            <children>
+                                                                <TextField fx:id="add_tour_name" promptText="Название турнира" />
+                                                                <TextField fx:id="add_tour_location" promptText="Место проведения" />
+                                                                <TextField fx:id="add_tour_prize" promptText="Сколько призовых денег" />
+                                                                <ComboBox fx:id="add_tour_game" prefWidth="150.0" />
+                                                                <Button fx:id="add_tour_initialize" mnemonicParsing="false" onAction="#initialize_tour" text="Инициализировать" />
+                                                                <Button fx:id="add_tour" mnemonicParsing="false" onAction="#plus_tour" text="Добавить" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="redo" text="Редактирование">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane prefHeight="571.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+                                    <tabs>
+                                        <Tab text="Игры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_game_name_original" promptText="Введите название игры, которую хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_game_name" promptText="Название игры" />
+                                                <TextField fx:id="redo_game_year" promptText="Какого года игра" />
+                                                <ComboBox fx:id="redo_game_dev" prefWidth="150.0" />
+                                                <Button fx:id="redo_game_initialize" mnemonicParsing="false" onAction="#initialize_game" text="Инициализировать" />
+                                                <Button fx:id="redo_game" mnemonicParsing="false" onAction="#redo_game" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Достижения">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_achievement_name_original" promptText="Введите название достижения, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_achiv_name" promptText="Название достижения" />
+                                                <ComboBox fx:id="redo_achiv_game" prefWidth="150.0" />
+                                                <ComboBox fx:id="redo_achiv_gamer" prefWidth="150.0" />
+                                                <Button fx:id="redo_achiv_initialize" mnemonicParsing="false" onAction="#initialize_achiv" text="Инициализировать" />
+                                                <Button fx:id="redo_achiv" mnemonicParsing="false" onAction="#redo_achiv" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Уровни">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_level_name_original" promptText="Введите название уровня, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_level_name" promptText="Название уровня" />
+                                                <ComboBox fx:id="redo_level_game" prefWidth="150.0" />
+                                                <Button fx:id="redo_level_initialize" mnemonicParsing="false" onAction="#initialize_level" text="Инициализировать" />
+                                                <Button fx:id="redo_level" mnemonicParsing="false" onAction="#redo_level" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                              <Tab text="Разработчики">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_dev_name_original" promptText="Введите название разработчика, которого хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_dev_name" promptText="Название разработчиков" />
+                                                <TextField fx:id="redo_dev_year" promptText="Год основания" />
+                                                <Button fx:id="redo_dev" mnemonicParsing="false" onAction="#redo_dev" text="Добавить" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                                        <Tab text="Покупки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_purchase_code_original" promptText="Введите код покупки, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_purchase_code" promptText="Код" />
+                                                <ComboBox fx:id="redo_purchase_gamer" prefWidth="150.0" />
+                                                <ComboBox fx:id="redo_purchase_game" prefWidth="150.0" />
+                                                <Button fx:id="redo_purchase_initialize" mnemonicParsing="false" onAction="#initialize_purchase" text="Инициализировать" />
+                                                <Button fx:id="redo_purchase" mnemonicParsing="false" onAction="#redo_purchase" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Подписки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_sub_code_original" promptText="Введите код подписки, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_sub_code" promptText="Код" />
+                                                <ComboBox fx:id="redo_sub_gamer" prefWidth="150.0" />
+                                                <ComboBox fx:id="redo_sub_game" prefWidth="150.0" />
+                                                <Button fx:id="redo_sub_initialize" mnemonicParsing="false" onAction="#initialize_sub" text="Инициализаровать" />
+                                                <Button fx:id="redo_sub" mnemonicParsing="false" onAction="#redo_sub" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Моды">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_mod_name_original" promptText="Введите название мода, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_mod_name" promptText="Название мода" />
+                                                <ComboBox fx:id="redo_mod_game" prefWidth="150.0" />
+                                                <Button fx:id="redo_mod_initialize" mnemonicParsing="false" onAction="#initialize_mod" text="Инициализировать" />
+                                                <Button fx:id="redo_mod" mnemonicParsing="false" onAction="#redo_mod" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Турниры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="redo_tour_name_original" promptText="Введите название турнира, который хотите изменнить" />
+                                                <Label text="Ниже на что изменить">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="redo_tour_name" promptText="Название турнира" />
+                                                <TextField fx:id="redo_tour_location" promptText="Место проведения" />
+                                                <TextField fx:id="redo_tour_prize" promptText="Сколько призовых денег" />
+                                                <ComboBox fx:id="redo_tour_game" prefWidth="150.0" />
+                                                <Button fx:id="redo_tour_initialize" mnemonicParsing="false" onAction="#initialize_tour" text="Инициализировать" />
+                                                <Button fx:id="redo_tour" mnemonicParsing="false" onAction="#redo_tour" text="Добавить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="delete" text="Удаление">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane prefHeight="571.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+                                    <tabs>
+                                        <Tab text="Игроки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_gamer_nick" promptText="Введите ник игрока" />
+                                                <Button fx:id="delete_gamer" mnemonicParsing="false" onAction="#del_gamer" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Игры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_game_name" promptText="Введите название игры" />
+                                                <Button fx:id="delete_game" mnemonicParsing="false" onAction="#del_game" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Достижения">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_achievement_name" promptText="Введите название достижения" />
+                                                <Button fx:id="delete_achievement" mnemonicParsing="false" onAction="#del_achievement" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Уровни">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_level_name" promptText="Введите название уровня" />
+                                                <Button fx:id="delete_level" mnemonicParsing="false" onAction="#del_level" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Разработчики">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_dev_name" promptText="Введите название разработчика" />
+                                                <Button fx:id="delete_dev" mnemonicParsing="false" onAction="#del_dev" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Покупки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_purchase_code" promptText="Введите код покупки" />
+                                                <Button fx:id="delete_purchase" mnemonicParsing="false" onAction="#del_purchase" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Подписки">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_sub_code" promptText="Введите код подписки" />
+                                                <Button fx:id="delete_sub" mnemonicParsing="false" onAction="#del_sub" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Моды">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_mod_name" promptText="Введите название мода" />
+                                                <Button fx:id="delete_mod" mnemonicParsing="false" onAction="#del_mod" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Турниры">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="542.0" prefWidth="1000.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="delete_tour_name" promptText="Введите название турнира" />
+                                                <Button fx:id="delete_tour" mnemonicParsing="false" onAction="#del_tour" text="Удалить" />
+                                             </children></VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
